@@ -12,6 +12,7 @@ function LoginPage() {
 
   const loginUser = () => {
     setError("");
+    setIsLoggedIn(null);
 
     signInWithEmailAndPassword(firebaseAuth, email, password)
       .then(() => {
@@ -35,8 +36,13 @@ function LoginPage() {
       });
   };
 
+  // null is that small window where firebase is still trying to auth you
   if (isLoggedIn === null) {
-    return <></>;
+    return (
+      <div>
+        <h1>Authenticating...</h1>
+      </div>
+    );
   }
 
   if (isLoggedIn === true) {
