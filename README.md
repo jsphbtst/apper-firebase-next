@@ -1,3 +1,11 @@
+# Apper Next.js Auth Example Using Firebase
+
+This repo contains the Next.js auth example using firebase we coded live in class.
+
+1. [Getting Started](#getting-started)
+2. [Learn More](#learn-more)
+3. [Deploy on Vercel](#deploy-on-vercel)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
